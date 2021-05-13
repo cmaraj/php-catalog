@@ -1,0 +1,425 @@
+/*? DISPLAY.PHP */
+
+body {
+  font-family: helvetica;
+  font-size: 1rem;
+  background-color: rgb(155, 177, 210);
+}
+
+nav {
+  margin: 2rem;
+}
+
+.intro {
+  text-align: left;
+  width: 70%;
+}
+
+.center {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.intro {
+  margin: 1rem auto;
+}
+
+.Canon {
+  color: red;
+}
+
+.Fujifilm {
+  color: #02916d;
+}
+
+.Panasonic {
+  color: #0140c0;
+}
+
+.Sony {
+  color: #165b65;
+}
+.addDesc {
+  font-size: 0.95rem;
+}
+
+.displayInfo {
+  font-size: 1rem;
+}
+
+.displayName {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.camera-content {
+  -webkit-box-shadow: 5px 10px 25px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 10px 25px -5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px;
+  width: 420px;
+  border-radius: 7px;
+  background-color: rgb(241, 254, 255);
+}
+#main,
+.youtube {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.side-menu {
+  overflow: hidden;
+  background-color: rgb(56, 72, 97);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+
+.side-menu a {
+  text-decoration: none;
+}
+
+.side-menu h2,
+.side-menu h3,
+.hide h3,
+.hide a {
+  display: none;
+}
+
+.side-menu a,
+.side-menu {
+  color: #fff;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-around;
+}
+
+.brands a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.addDesc::after {
+  content: "...";
+}
+
+.camera-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.camera-right {
+  width: 44%;
+  padding: 1rem;
+}
+
+.camera-image {
+  margin-top: 1rem;
+}
+
+.camera-image:hover,
+.displayName:hover {
+  opacity: 0.8;
+}
+
+.camera-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.btn-more {
+  text-align: center;
+  width: 10rem;
+  background-color: rgb(56, 72, 97);
+  border-radius: 7px;
+  padding: 0.7rem;
+  margin-left: 7rem;
+}
+
+.btn-more:hover {
+  background-color: rgb(36, 83, 157);
+  cursor: pointer;
+}
+
+.btn-more a {
+  color: rgb(209, 222, 255);
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.search input:focus,
+.search button:focus {
+  outline: none;
+}
+
+.search-input {
+  width: 20rem;
+  padding: 1rem;
+  margin-left: 3rem;
+  border: none;
+  border-radius: 100px;
+  -webkit-box-shadow: 5px 10px 25px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 10px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+.search-input:hover {
+  -webkit-box-shadow: 5px 10px 25px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 10px 25px 3px rgba(0, 0, 0, 0.6);
+}
+
+.btn-search:hover {
+  cursor: pointer;
+  color: rgb(56, 72, 97);
+}
+
+.btn-search {
+  border: #fff;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 100px;
+  right: 44px;
+  position: relative;
+  -webkit-box-shadow: 18px 12px 26px -7px rgba(0, 0, 0, 0.43);
+  box-shadow: 18px 12px 26px -7px rgba(0, 0, 0, 0.43);
+}
+
+@media (max-width: 492px) {
+  .btn-search {
+    top: -47px;
+    right: -298px;
+    position: relative;
+  }
+
+  .camera-content {
+    justify-content: center;
+    width: 80%;
+  }
+
+  .search-input {
+    margin-left: 1rem;
+  }
+
+  .camera-right,
+  .camera-bottom {
+    width: 90%;
+  }
+}
+
+/*? DETAILS.PHP */
+
+.buttons {
+  display: flex;
+  margin-bottom: 10rem;
+  justify-content: space-around;
+}
+
+.nextbtn {
+  width: 88px;
+}
+
+.detail-page {
+  background-color: rgb(155, 177, 210);
+}
+
+.flex-image {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 4rem;
+}
+
+.detail-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+@media (max-width: 900px) {
+  .detail-camera {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-image {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 700px) {
+  .detail-card {
+    padding: 2rem;
+  }
+  .flex-image {
+    margin: 1rem;
+  }
+
+  .side-menu {
+    font-size: 0.8rem;
+  }
+}
+
+/* * INSERT */
+
+.insert-form {
+  margin-bottom: 4rem;
+  padding: 2rem;
+}
+
+.flex-insert {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.edit-container {
+  margin-bottom: 5rem;
+  max-width: 40rem;
+}
+
+.edit-all-container {
+  display: inline;
+}
+
+.insert-image {
+  margin: 2rem;
+}
+
+.youtube {
+  margin: 4rem 0rem 8rem;
+}
+
+@media (min-width: 700px) {
+  body {
+    font-family: helvetica;
+    font-size: 1.2rem;
+  }
+  .side-menu {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(56, 72, 97);
+    overflow-x: hidden;
+    padding: 20px;
+  }
+
+  .side-menu {
+    display: inline-block;
+  }
+
+  nav {
+    padding: 1rem 5rem;
+    padding-left: 180px;
+  }
+
+  .intro {
+    margin: 4rem auto;
+  }
+
+  .center {
+    font-size: 5rem;
+  }
+
+  #main,
+  .insert-form,
+  .edit-container,
+  .search,
+  .login,
+  .insert-image,
+  .padding-alert,
+  .youtube,
+  .intro {
+    padding-left: 180px;
+  }
+
+  .flex-camera {
+    padding: 1rem 5rem;
+    padding-left: 220px;
+  }
+
+  .side-menu h2,
+  .side-menu h3,
+  .hide h3,
+  .hide a {
+    display: block;
+  }
+
+  .insert-form {
+    width: 100%;
+    padding-right: 2rem;
+  }
+  .weather-padding {
+    padding-top: 1rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .insert-form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .edit-all-container {
+    display: flex;
+  }
+
+  .edit-container {
+    padding: 4rem 1rem;
+    height: 100%;
+  }
+}
+
+/* ? EDIT */
+
+.edit-links {
+  height: 35rem;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.edit-links a {
+  text-align: center;
+  text-decoration: none;
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+
+.edit-links a:hover {
+  opacity: 0.8;
+}
+
+/* * LOGIN */
+
+.login {
+  margin: 2rem;
+  width: 60%;
+}
